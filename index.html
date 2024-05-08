@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avalie a sua mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="/images/img1.png" alt="Balão de fala representando avaliação por estrelas de 1 a 5.">
+        </header>
+        <form id="my-form" action="">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend class="personal-informations">Informações Pessoais</legend>
+                    <div class="personal-name">
+                        <div class="input-wrapper">
+                            <label for="personal-first-name">Nome</label>
+                            <input type="text" name="" id="personal-first-name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="personal-last-name">Sobrenome</label>
+                            <input type="text" name="" id="personal-last-name">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="personal-email">Email <span>(digite apenas um email válido)</span></label>
+                        <input type="email" name="" id="personal-email">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend class="mentor-informations">Informações do Mentor</legend>
+                    <div class="input-wrapper">
+                        <label for="mentor-options">Selecione quem foi o seu mentor</label>
+                        <select name="" id="mentor-options">
+                            <option value="mayk-brito">Mayk Brito</option>
+                            <option value="rodrigo-goncalves">Rodrigo Gonçalves</option>
+                            <option value="diego-fernandes">Diego Fernandes</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="feedback-about-mentor">Feedback sobre o mentor</label>
+                        <textarea name="" id="feedback-about-mentor"></textarea>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="" id="doubts-clarified">
+                        <label for="doubts-clarified">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend class="scheduling-next-mentoring">Agendando próxima mentoria</legend>
+                    <div class="schedule-info">
+                        <div class="input-wrapper">
+                            <label for="mentoring-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="mentoring-date">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="begin-mentoring">Das</label>
+                            <input type="time" name="" id="begin-mentoring">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="end-mentoring">Até</label>
+                            <input type="time" name="" id="end-mentoring">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <footer>
+            <div class="button-wrapper">
+                <input class="button" type="submit" form="my-form" value="Salvar">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
